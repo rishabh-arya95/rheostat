@@ -35,6 +35,9 @@ jobs:
       - run:
           name: Run tests
           command: npm run tests-only
+          environment:
+            TEST: true
+            REACT: 0.14
 
 workflows:
   # Below is the definition of your workflow.
